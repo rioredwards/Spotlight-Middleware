@@ -10,7 +10,7 @@ describe('color routes', () => {
     const resp = await request(app).get('/colors/orange');
     expect(resp.body).toEqual(['red', 'yellow']);
   });
-  it.skip('/colors/green should return ["red", "blue"]', async () => {
+  it('/colors/green should return ["red", "blue"]', async () => {
     const resp = await request(app).get('/colors/green');
     expect(resp.body).toEqual(['yellow', 'blue']);
   });
